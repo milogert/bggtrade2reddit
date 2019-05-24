@@ -5,8 +5,10 @@ This small program converts your BGG For Trade list to a nicely formatted Reddit
 # Running the program
 
 ```
-source .venv/bin/activate
-./main.py your_username
+$ git clone https://github.com/milogert/bggtrade2reddit
+$ source .venv/bin/activate
+$ pip install -f requirements.txt
+$ ./main.py your_username
 ```
 
 # Enhancing output
