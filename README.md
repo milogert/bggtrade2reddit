@@ -5,18 +5,21 @@ This small program converts your BGG For Trade list to a nicely formatted Reddit
 # Running the program
 
 ```
-$ git clone https://github.com/milogert/bggtrade2reddit
-$ cd bggtrade2reddit
-$ source .venv/bin/activate
-$ pip install -f requirements.txt
-$ ./main.py your_username
+git clone https://github.com/milogert/bggtrade2reddit
+cd bggtrade2reddit
+virtualenv i- python3.7 .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+./main.py your_username
 ```
 
 # Enhancing output
 
-You can enchance the output by including a tag, followed by a colon, followed by some json in the "Trade Condition" column on BGG. The json must be on a single line and it must be formatted like so:
+You can enchance the output by including a tag, followed by a colon, followed by some json in the Private Info > Comments section on BGG. The json must be on a single line and it must be formatted like so:
 
 `bggtrade2reddit:{"key":"value"}`
+
+For this to work correctly, you must log in with BGG as prompted. The session is saved in a file called `.cookie`, which you can delete if you no longer want this program to automatically authenticate you.
 
 ## Optional keys for enhanced output
 
